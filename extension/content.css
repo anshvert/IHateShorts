@@ -1,0 +1,29 @@
+ytd-browse[page-subtype="home"] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+ytd-browse[page-subtype="home"] ytd-rich-section-renderer:has(ytd-reel-shelf-renderer),
+ytd-browse[page-subtype="home"] ytd-rich-section-renderer:has(a[href^="/shorts"]),
+ytd-browse[page-subtype="home"] ytd-rich-section-renderer:has([aria-label*="Shorts"]),
+ytd-browse[page-subtype="home"] ytd-rich-section-renderer:has(#rich-shelf-header-container:has(svg path[d*="M10 14.65v-5.3L15 12l-5 2.65z"])),
+ytd-browse[page-subtype="home"] ytd-rich-shelf-renderer[is-shorts],
+ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+ytd-browse[page-subtype="subscriptions"] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+ytd-browse[page-subtype="subscriptions"] ytd-rich-section-renderer:has(ytd-reel-shelf-renderer),
+ytd-browse[page-subtype="subscriptions"] ytd-rich-section-renderer:has(a[href^="/shorts"]),
+ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+ytd-watch-flexy ytd-reel-shelf-renderer,
+ytd-watch-flexy ytd-compact-video-renderer:has(a[href^="/shorts/"]) {
+  display: none !important;
+}
+
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+yt-tab-shape[tab-title="Shorts"],
+tp-yt-paper-tab:has(.tab-content[aria-label="Shorts"]) {
+  display: none !important;
+}
+
+[data-ihs-hidden="true"] {
+  display: none !important;
+}

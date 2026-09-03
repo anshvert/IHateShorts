@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IHateShorts</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-box">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1>IHateShorts</h1>
+        <p class="subtitle">YouTube Shorts Blocker</p>
+      </div>
+    </header>
+
+    <div class="status-card">
+      <div class="status-indicator active"></div>
+      <div class="status-info">
+        <span class="status-label">Active on YouTube</span>
+        <span class="status-desc">Shorts elements are blocked</span>
+      </div>
+    </div>
+
+    <section class="settings-group">
+      <label class="setting-item" for="toggle-shelves">
+        <div class="setting-info">
+          <span class="setting-title">Hide Feed Shelves</span>
+          <span class="setting-desc">Remove Shorts sections & rows from home feed</span>
+        </div>
+        <div class="switch">
+          <input type="checkbox" id="toggle-shelves" checked>
+          <span class="slider"></span>
+        </div>
+      </label>
+
+      <label class="setting-item" for="toggle-sidebar">
+        <div class="setting-info">
+          <span class="setting-title">Hide Sidebar Button</span>
+          <span class="setting-desc">Remove the Shorts button from left navigation</span>
+        </div>
+        <div class="switch">
+          <input type="checkbox" id="toggle-sidebar" checked>
+          <span class="slider"></span>
+        </div>
+      </label>
+
+      <label class="setting-item" for="toggle-redirect">
+        <div class="setting-info">
+          <span class="setting-title">Play in Regular Player</span>
+          <span class="setting-desc">Open Shorts in standard player with scrubber & controls</span>
+        </div>
+        <div class="switch">
+          <input type="checkbox" id="toggle-redirect" checked>
+          <span class="slider"></span>
+        </div>
+      </label>
+    </section>
+
+    <footer class="footer">
+      <span>Version 1.0.0</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

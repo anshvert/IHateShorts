@@ -1,0 +1,17 @@
+{
+  "name": "ihateshorts",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "open": "open dist/IHateShorts.app",
+    "icons": "swift scripts/generate_icons.swift extension/icons"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
